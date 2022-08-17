@@ -6,6 +6,9 @@ CTF-Outside
 
 This is a Quake port of the Unreal Tournament 4 map CTF-Outside, which was the prototype for the final map CTF-Titanpass. The map is intended to be played with the [KTX](https://github.com/QW-Group/ktx) setting `k_ctf_based_spawn` set to `1`, and might perhaps be even more interesting without hook enabled.
 
+## Status
+
+Still work in progress. More texturing, more entities, some final touches on brushes.
 
 ## Porting
 
