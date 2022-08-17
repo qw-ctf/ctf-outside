@@ -31,7 +31,7 @@ A collection of links to further explore of the origins of this map.
 #### ArtStation
 
 * [Rick Kohler, Art Director](https://rek23.artstation.com/projects/A2OqV)
-* [Adam Wood, Concept Artist](https://www.artstation.com/artwork/mA4X1)
+* [Adam Wood, Concept Artist](https://wood.artstation.com/projects/mA4X1)
 
 #### Videos
 
