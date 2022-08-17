@@ -1,0 +1,70 @@
+name: CTF-Outside
+
+on: [push, workflow_dispatch]
+
+jobs:
+  build:
+    runs-on: ubuntu-22.04
+
+    steps:
+      - uses: actions/checkout@v3
+        with:
+          fetch-depth: 1
+
+      - name: Cache ericw-tools
+        uses: actions/cache@v3
+        id: cache-dependencies
+        with:
+          path: |
+            bin/qbsp
+            bin/vis
+            bin/light
+          key: ericw-tools
+
+      - name: Fetch ericw-tools
+        uses: actions/checkout@v3
+        with:
+          fetch-depth: 1
+          repository: ericwa/ericw-tools
+          submodules: true
+          path: ericw-tools
+        if: steps.cache-dependencies.outputs.cache-hit != 'true'
+
+      - name: Install embree & tbb
+        run: |
+          sudo apt-get update -qq
+          sudo apt-get install -qq libembree3-3 libtbb12
+
+      - name: Build ericw-tools
+        run: |
+          sudo apt-get update -qq
+          sudo apt-get install -qq libembree-dev libtbb-dev groff
+          cd ericw-tools
+          mkdir build && cd build
+          cmake .. -DCMAKE_BUILD_TYPE=Release
+          make
+          mkdir ../../bin
+          mv qbsp/qbsp   \
+             vis/vis     \
+             light/light \
+             ../../bin/
+        if: steps.cache-dependencies.outputs.cache-hit != 'true'
+
+      - name: Compile map
+        run: |
+          bin/qbsp -nopercent -splitturb -bsp2 outside.map outside.bsp
+
+      - name: Vis map
+        run: |
+          bin/vis outside.bsp
+
+      - name: Light map
+        run: |
+          bin/light -extra4 -soft 4 outside.bsp
+
+      - uses: actions/upload-artifact@v3
+        with:
+          name: ctf-outside
+          path: |
+            outside.bsp
+            outside.lit
