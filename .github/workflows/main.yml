@@ -50,6 +50,41 @@ jobs:
              ../../bin/
         if: steps.cache-dependencies.outputs.cache-hit != 'true'
 
+      - name: Cache wads
+        uses: actions/cache@v3
+        id: cache-wads
+        with:
+          path: |
+            wads/misc.wad
+            wads/liquids.wad
+            wads/makkon_stone/makkon_stone.wad
+            wads/makkon_nature/makkon_nature.wad
+            wads/makkon_building/makkon_building.wad
+          key: wads
+
+      - name: Fetch wads
+        run: |
+          mkdir wads
+
+          curl -s -o quake.zip 'https://valvedev.info/tools/quake-wad-overhaul-project/quake_overhaul_wads.zip'
+          unzip -d wads quake.zip misc.wad
+
+          curl -s -o liquids.zip 'https://www.quaddicted.com/files/wads/liquids.zip'
+          unzip -d wads liquids.zip liquids.wad
+
+          mkdir wads/makkon_building
+          curl -s -o building.zip 'https://www.slipseer.com/index.php?resources/makkon-textures.28/version/117/download&file=931'
+          unzip -d wads/makkon_building building.zip makkon_building.wad
+
+          mkdir wads/makkon_nature
+          curl -s -o nature.zip 'https://www.slipseer.com/index.php?resources/makkon-textures.28/version/117/download&file=936'
+          unzip -d wads/makkon_nature nature.zip makkon_nature.wad
+
+          mkdir wads/makkon_stone
+          curl -s -o stone.zip 'https://www.slipseer.com/index.php?resources/makkon-textures.28/version/117/download&file=938'
+          unzip -d wads/makkon_stone stone.zip makkon_stone.wad
+        if: steps.cache-wads.outputs.cache-hit != 'true'
+
       - name: Compile map
         run: |
           bin/qbsp -nopercent -splitturb -bsp2 outside.map outside.bsp
