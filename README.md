@@ -35,18 +35,15 @@ A collection of links to further explore of the origins of this map.
 
 #### Videos
 
-The Making of Titan Pass - Part 1
+A three part series _The Making of Titan Pass_
 
-[![The Making of Titan Pass - Part 1](http://img.youtube.com/vi/Vx9ZOd9rteY/hqdefault.jpg)](http://www.youtube.com/watch?v=Vx9ZOd9rteY)
+[<img src="http://img.youtube.com/vi/Vx9ZOd9rteY/hqdefault.jpg" width="30%">](http://www.youtube.com/watch?v=Vx9ZOd9rteY)
+[<img src="http://img.youtube.com/vi/OM2zJpPiYiw/hqdefault.jpg" width="30%">](http://www.youtube.com/watch?v=OM2zJpPiYiw)
+[<img src="http://img.youtube.com/vi/v1Z_F9Jv4Ms/hqdefault.jpg" width="30%">](http://www.youtube.com/watch?v=v1Z_F9Jv4Ms)
+  
+_CTF Exhibition Tournament_ at Epic Games HQ featuring an early version of CTF-Titanpass
 
-The Making of Titan Pass - Part 2
-
-[![The Making of Titan Pass - Part 2](http://img.youtube.com/vi/OM2zJpPiYiw/hqdefault.jpg)](http://www.youtube.com/watch?v=OM2zJpPiYiw)
-
-The Making of Titan Pass - Part 3
-
-  [![The Making of Titan Pass - Part 3](http://img.youtube.com/vi/v1Z_F9Jv4Ms/hqdefault.jpg)](http://www.youtube.com/watch?v=v1Z_F9Jv4Ms)
-
+[<img src="http://img.youtube.com/vi/xDB3LyTynns/hqdefault.jpg" width="30%">](http://www.youtube.com/watch?v=xDB3LyTynns)
 
 ## License
 
