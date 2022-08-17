@@ -35,6 +35,10 @@ A collection of links to further explore of the origins of this map.
 
 #### Videos
 
+Probably the first introduction to CTF-Outside
+
+[<img src="http://img.youtube.com/vi/il6BkqeGp7w/hqdefault.jpg" width="30%">](https://youtu.be/il6BkqeGp7w?t=651)
+
 A three part series _The Making of Titan Pass_
 
 [<img src="http://img.youtube.com/vi/Vx9ZOd9rteY/hqdefault.jpg" width="30%">](http://www.youtube.com/watch?v=Vx9ZOd9rteY)
