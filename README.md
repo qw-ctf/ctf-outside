@@ -1,4 +1,8 @@
-# CTF-Outside
+<h1 align="center">
+<img width="80%" src="images/1.webp" alt="CTF-Outside">
+
+CTF-Outside
+</h1>
 
 This is a Quake port of the Unreal Tournament 4 map CTF-Outside, which was the prototype for the final map CTF-Titanpass. The map is intended to be played with the [KTX](https://github.com/QW-Group/ktx) setting `k_ctf_based_spawn` set to `1`, and might perhaps be even more interesting without hook enabled.
 
@@ -6,6 +10,14 @@ This is a Quake port of the Unreal Tournament 4 map CTF-Outside, which was the p
 ## Porting
 
 The port was made manually brush by brush without any form of automation and is thus not identical to CTF-Outside, neither geometry nor textures, but fairly close.
+
+## Screenshots
+
+[<img src="images/1.webp" width="18%">](images/1.webp?raw=true)
+[<img src="images/2.webp" width="18%">](images/2.webp?raw=true)
+[<img src="images/3.webp" width="18%">](images/3.webp?raw=true)
+[<img src="images/4.webp" width="18%">](images/4.webp?raw=true)
+[<img src="images/5.webp" width="18%">](images/5.webp?raw=true)
 
 
 ## Trivia
