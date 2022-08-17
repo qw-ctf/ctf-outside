@@ -1,6 +1,10 @@
 name: CTF-Outside
 
-on: [push, workflow_dispatch]
+on:
+  push:
+    paths:
+      - outside.map
+  workflow_dispatch:
 
 jobs:
   build:
